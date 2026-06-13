@@ -19,8 +19,8 @@ export default function Footer() {
         className="relative w-full overflow-hidden bg-gradient-to-br from-ink-900 via-ink-800 to-brand-950 px-6 py-12 text-white sm:px-10 lg:px-16"
       >
         <div className="absolute inset-0 grain opacity-30" />
-        <div className="pointer-events-none absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-accent-500/20 blur-3xl" />
-        <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-brand-700/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 right-0 h-72 w-72 rounded-full bg-accent-500/20 blur-3xl gpu-layer" />
+        <div className="pointer-events-none absolute -top-32 -left-32 h-96 w-96 rounded-full bg-brand-700/20 blur-3xl gpu-layer" />
 
         <div className="relative grid grid-cols-1 items-center gap-8 md:grid-cols-3">
             {/* Logo */}
@@ -57,7 +57,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <FiMapPin className="h-4 w-4 text-brand-300" />
-                208 Avenue street, UK
+                2026 Sleman, Yogyakarta, Indonesia
               </li>
             </ul>
 

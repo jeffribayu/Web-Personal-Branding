@@ -14,7 +14,7 @@ const item = {
 export default function Portfolio() {
   return (
     <section id="portfolio" className="relative bg-gradient-to-b from-white via-slate-50/80 to-white py-20 sm:py-24">
-      <div className="pointer-events-none absolute left-1/4 top-32 h-40 w-40 rounded-full bg-brand-200/30 blur-2xl" />
+      <div className="pointer-events-none absolute left-1/4 top-32 h-40 w-40 rounded-full bg-brand-200/30 blur-2xl gpu-layer" />
       <div className="container relative mx-auto">
         <div className="mx-auto mb-12 max-w-xl text-center">
           <span className="section-label">Portfolio</span>

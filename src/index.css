@@ -10,6 +10,8 @@
     font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     background-color: #f8fafc;
+    /* Avoid scroll-chaining/rubber-band stalls that make the first scroll feel stuck */
+    overscroll-behavior-y: none;
   }
   .dark body {
     background-color: #083344;
@@ -79,6 +81,15 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  /* Promote heavy decorative effects (large blurs / blends) to their own
+     GPU layer. The browser rasterizes them once and only translates the
+     cached texture while scrolling, instead of repainting every frame.
+     This is what makes scrolling smooth on the hero/section backdrops. */
+  .gpu-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   .mask-fade-r {
     mask-image: linear-gradient(to right, black 80%, transparent);

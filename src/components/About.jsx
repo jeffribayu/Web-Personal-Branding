@@ -14,8 +14,8 @@ const fadeIn = {
 export default function About() {
   return (
     <section id="about" className="relative py-20 sm:py-28">
-      <div className="pointer-events-none absolute right-0 top-24 h-64 w-64 rounded-full bg-brand-200/40 blur-3xl" />
-      <div className="pointer-events-none absolute -left-20 bottom-20 h-48 w-48 rounded-full bg-accent-200/35 blur-3xl" />
+      <div className="pointer-events-none absolute right-0 top-24 h-64 w-64 rounded-full bg-brand-200/40 blur-3xl gpu-layer" />
+      <div className="pointer-events-none absolute -left-20 bottom-20 h-48 w-48 rounded-full bg-accent-200/35 blur-3xl gpu-layer" />
       <div className="container relative mx-auto">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
           {/* LEFT — Image */}

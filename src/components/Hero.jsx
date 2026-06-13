@@ -27,10 +27,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-brand-900/25" />
       <div className="absolute inset-0 bg-gradient-to-tr from-accent-600/20 via-transparent to-brand-400/15" />
       <div className="absolute inset-0 bg-hero-radial" />
-      <div className="absolute inset-0 grain opacity-50" />
+      <div className="absolute inset-0 grain opacity-50 gpu-layer" />
       {/* Soft grid for extra texture */}
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        className="pointer-events-none absolute inset-0 opacity-[0.07] gpu-layer"
         style={{
           backgroundImage:
             "linear-gradient(rgba(255,255,255,0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.14) 1px, transparent 1px)",
@@ -41,9 +41,9 @@ export default function Hero() {
       <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-full max-w-md bg-gradient-to-r from-black/40 to-transparent lg:block lg:max-w-lg" />
 
       {/* Decorative blurred orbs + accent */}
-      <div className="pointer-events-none absolute -left-28 top-20 h-80 w-80 animate-drift rounded-full bg-brand-400/30 blur-3xl" />
-      <div className="pointer-events-none absolute -bottom-36 right-0 h-96 w-96 rounded-full bg-brand-500/35 blur-3xl" />
-      <div className="pointer-events-none absolute right-1/4 top-1/3 h-56 w-56 rounded-full bg-accent-500/25 blur-3xl" />
+      <div className="pointer-events-none absolute -left-28 top-20 h-80 w-80 animate-drift rounded-full bg-brand-400/30 blur-3xl gpu-layer" />
+      <div className="pointer-events-none absolute -bottom-36 right-0 h-96 w-96 rounded-full bg-brand-500/35 blur-3xl gpu-layer" />
+      <div className="pointer-events-none absolute right-1/4 top-1/3 h-56 w-56 rounded-full bg-accent-500/25 blur-3xl gpu-layer" />
       <div className="pointer-events-none absolute left-10 bottom-24 hidden h-3 w-32 rotate-[-8deg] rounded-full bg-gradient-to-r from-brand-400 to-accent-400 opacity-80 sm:block" />
 
       {/* Inner content — full-screen height, edge-to-edge with comfortable side padding */}
@@ -126,7 +126,7 @@ export default function Hero() {
                   src={heroImage}
                   alt={`${profile.fullName} portrait`}
                   loading="eager"
-                  className="relative z-10 mx-auto block w-full max-w-md object-contain object-bottom mix-blend-multiply max-h-[500px] drop-shadow-[0_20px_50px_rgba(0,0,0,0.45)] sm:max-h-[560px] sm:max-w-xl lg:mx-0 lg:ml-auto lg:mr-0 lg:max-h-[640px] lg:max-w-4xl lg:-mb-10 lg:translate-x-2 lg:scale-105 xl:max-w-[48rem] xl:translate-x-4 xl:scale-110"
+                  className="gpu-layer relative z-10 mx-auto block w-full max-w-md object-contain object-bottom mix-blend-multiply max-h-[500px] drop-shadow-[0_20px_50px_rgba(0,0,0,0.45)] sm:max-h-[560px] sm:max-w-xl lg:mx-0 lg:ml-auto lg:mr-0 lg:max-h-[640px] lg:max-w-4xl lg:-mb-10 lg:translate-x-2 lg:scale-105 xl:max-w-[48rem] xl:translate-x-4 xl:scale-110"
                 />
 
                 {/* Floating badges */}

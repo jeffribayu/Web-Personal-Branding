@@ -17,8 +17,8 @@ export default function Clients() {
         >
           <div className="absolute inset-0 bg-[linear-gradient(105deg,transparent_40%,rgba(255,255,255,0.06)_50%,transparent_60%)]" />
           <div className="absolute inset-0 grain opacity-35" />
-          <div className="absolute -left-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-brand-300/20 blur-3xl" />
-          <div className="absolute -right-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-brand-300/20 blur-3xl" />
+          <div className="absolute -left-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-brand-300/20 blur-3xl gpu-layer" />
+          <div className="absolute -right-10 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-brand-300/20 blur-3xl gpu-layer" />
 
           <div className="relative grid grid-cols-2 items-center gap-y-8 text-white sm:grid-cols-4">
             {clients.map((name, i) => {

@@ -140,7 +140,7 @@ export const socialLinks = [
   {
     platform: "web",
     label: "Website",
-    href: "https://yourdomain.com",
+    href: "https://jeffporto.my.id/",
   },
 ];
 
